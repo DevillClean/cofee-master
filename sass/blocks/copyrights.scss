@@ -1,0 +1,31 @@
+.copyrights {
+	padding-top: 30px;
+	border-top: 1px solid $white;
+	text-align: center;
+	font-size: 12px;
+	color: rgb(155, 162, 170);
+}
+
+.copyrights a {
+	@include link-style;
+	display: inline-block;
+	color: $links-color;
+	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+	.copyrights {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.copyrights {
+		font-size: 14px;
+	}
+}

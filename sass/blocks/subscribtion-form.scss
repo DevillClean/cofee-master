@@ -1,0 +1,24 @@
+.subscribtion-form {
+	margin-bottom: 30px;
+}
+
+.subscribtion-form__inviting {
+	margin-bottom: 10px;
+	color: rgb(155, 162, 170);
+}
+
+.subscribtion-form .form__input-wrap {
+	margin-bottom: 8px;
+}
+
+.subscribtion-form__btn {
+	margin: 0;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+
+	.subscribtion-form__inviting {
+		margin-bottom: 30px;
+	}
+}

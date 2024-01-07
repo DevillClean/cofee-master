@@ -1,0 +1,40 @@
+.btn {
+	@include link-style;
+	margin: 0;
+	padding: 14px 26px;
+	text-align: center;
+	color: $white;
+	font-size: 14px;
+	font-family: "Libre Baskerville";
+	background-color: $cacao;
+	border: none;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+.btn--framed {
+  border: 2px solid $buttons-frame;
+  background-color: transparent;
+  color: $titles-color;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+	padding: 12px 24px;
+	border: 2px solid rgb(193, 165, 150);
+}
+
+.btn--framed:hover,
+.btn--framed:active,
+.btn--framed:focus {
+	padding: 14px 26px;
+	border-color: $cacao;
+}
+
+@media (min-width: 768px) {
+
+	.btn {
+		display: inline-block;
+	}
+}

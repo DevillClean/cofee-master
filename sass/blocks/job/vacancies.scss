@@ -1,0 +1,119 @@
+.vacancies {
+	position: relative;
+	padding: 40px 0;
+	color: $white;
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+		background-image: url("../img/job-page/vacancies.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		opacity: 0.5;
+		z-index: -1;
+	}
+}
+
+.vacancies__title {
+	margin-bottom: 15px;
+	color: $white;
+}
+
+.vacancies__intro {
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.vacancies__list {
+	@include list-style;
+	margin-bottom: 30px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.vacancies__item {
+	position: relative;
+	padding: 24px 38px 20px 25px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.vacancies__item-handler {
+	position: absolute;
+	top: 35px;
+	right: 15px;
+	z-index: 50;
+}
+
+.vacancies__item-handler--fliped {
+	transform: rotate(180deg);
+}
+
+.vacancies__item-handler svg {
+  width: 18px;
+  height: 10px;
+  fill: $white;
+}
+
+.vacancies__name {
+	margin-bottom: 15px;
+	color: $white;
+}
+
+.vacancies__short-description {
+	color: #9ba2aa;
+	font-size: 12px;
+}
+
+.vacancies__full-description {
+	display: none;
+	padding: 20px 0 30px;
+	color: #9ba2aa;
+}
+
+.vacancies__full-description span {
+	font-weight: 700;
+}
+
+.vacancies__full-description p {
+	margin: 8px 0;
+}
+
+.vacancies__full-description--shown {
+	display: block;
+}
+
+@media (min-width: 768px) {
+
+	.vacancies {
+		text-align: center;
+	}
+
+	.vacancies__item {
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.vacancies {
+		padding: 75px 0 100px;
+	}
+
+	.vacancies__list {
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width: 830px;
+	}
+
+	.vacancies__item {
+		padding: 24px 58px 22px 30px;
+	}
+
+	.vacancies__item-handler {
+		right: 25px;
+	}
+}

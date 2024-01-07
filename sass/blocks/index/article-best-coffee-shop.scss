@@ -1,0 +1,104 @@
+.article-best-coffee-shop {
+	padding: 40px 0;
+}
+
+.article-best-coffee-shop__title {
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.article-best-coffee-shop__picture-wrap {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.article-best-coffee-shop__picture-wrap img {
+	width: 100%;
+}
+
+.article-best-coffee-shop__btn {
+	margin: 0;
+	margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+
+	.article-best-coffee-shop {
+		padding: 40px 0;
+	}
+
+	.article-best-coffee-shop__container {
+		display: grid;
+		grid-template-columns: repeat(2, 48%);
+		grid-column-gap: 4%;
+		grid-template-rows: auto auto auto;
+	}
+
+	.article-best-coffee-shop__title {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		justify-self: center;
+		width: 70%;
+		text-align: center;
+	}
+
+	.article-best-coffee-shop__picture-wrap {
+	  grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+		margin: 0;	
+	}
+
+	.article-best-coffee-shop p {
+	  grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		align-self: center;
+		margin: 0;	
+	}
+
+	.article-best-coffee-shop__btn {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 3;
+		grid-row-end: -1;
+		align-self: end;
+		justify-self: left;
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.article-best-coffee-shop {
+		padding: 95px 0 75px;
+	}
+
+	.article-best-coffee-shop__picture-wrap {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: -1;
+	}
+
+	.article-best-coffee-shop__title {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		justify-self: unset;
+		align-self: end;
+		margin-bottom: 25px;
+		width: 100%;
+		text-align: left;
+	}
+
+	.article-best-coffee-shop__btn {
+		align-self: start;
+	}
+}
+

@@ -1,0 +1,157 @@
+.cafes {
+	position: relative;
+	padding: 40px 0;
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/dark-background.jpg");
+	  background-size: cover;
+	  opacity: 0.5;
+	  z-index: -1;
+	}
+}
+
+.cafes__title {
+	margin-bottom: 30px;
+	color: $white;
+}
+
+.cafes__list {
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+}
+
+.cafes__item {
+	margin-bottom: 27px;
+	background-color: $white;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.cafes__picture-wrap {
+	position: relative;
+	max-height: 180px;
+	min-height: 180px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.cafes__picture-wrap img {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cafes__text-wrap {
+	padding: 30px 15px;
+}
+
+.cafes__article-title {
+	margin-bottom: 15px;
+}
+
+.cafes__article-link {
+	@include link-style;
+	margin-top: 15px;
+	color: $links-color;
+	font-family: "Libre Baskerville";
+}
+
+.cafes__btn {
+	margin: 0;
+	margin-top: 30px;
+	width: 100%;
+}
+
+@media (min-width: 570px) {
+
+  .cafes__picture-wrap {
+    min-height: 180px;
+    max-height: 246px;
+  }
+}
+
+@media (min-width: 768px) {
+
+	.cafes {
+		padding: 40px 0;
+		text-align: center;
+	}
+
+  .cafes__picture-wrap {
+    min-height: 246px;
+    max-height: 321px;
+  }
+
+  .cafes__text-wrap {
+  	text-align: left;
+  }
+
+  .cafes__btn {
+  	width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+
+	.cafes {
+    padding: 95px 0;
+	}
+
+	.cafes__title {
+		margin-bottom: 50px;
+	}
+
+	.cafes__list {
+		margin: 0 auto;
+		min-width: 912px;
+		max-width: 1170px;
+	}
+
+	.cafes__item {
+		margin-bottom: 0;
+	}
+
+	.cafes__article {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.cafes__picture-wrap {
+		min-height: 340px;
+		max-height: 340px;
+		width: 50%;
+	}
+
+	.cafes__text-wrap {
+		padding: 50px;
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.cafes__item:nth-of-type(even) .cafes__article {
+    flex-direction: row-reverse;
+	}
+
+	.cafes__btn {
+		margin-top: 40px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.cafes {
+		padding: 95px 0;
+	}
+}
+

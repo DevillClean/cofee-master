@@ -1,0 +1,39 @@
+.toggler {
+	width: 24px;
+	height: 16px;
+}
+
+.toggler__element {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: $black;
+
+	&::before {
+		@include element-style(24px, 2px, $black);
+		top: 6px;
+		left: 0;
+	}
+
+	&::after {
+		@include element-style(24px, 2px, $black);
+		top: 12px;
+		left: 0;
+	}
+}
+
+.toggler--cross .toggler__element {
+	background-color: $titles-color;
+	transform: rotate(45deg);
+
+	&::before {
+		top: unset;
+		background-color: $titles-color;
+		transform: rotate(-90deg);
+	}
+
+	&::after {
+		display: none;
+	}
+}

@@ -1,0 +1,26 @@
+.inner-page-title {
+	position: relative;
+	margin-bottom: 40px;
+	padding: 40px 0 40px;
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.6;
+		background-position: center;
+		z-index: -1;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.inner-page-title {
+		margin-bottom: 95px;
+		padding: 100px 0;
+	}
+}
